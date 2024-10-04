@@ -1,0 +1,142 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+  box-sizing: border-box;
+}
+
+body {
+  background: #ffffff;
+}
+
+nav {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: #ffffff;
+  padding: 10px;
+}
+
+.icon-container {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  padding: 10px 0;
+}
+
+.icon-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 15px; /* Adjust spacing between icons */
+}
+
+.icon-item label {
+  font-size: 8px;
+  margin-top: 5px;
+}
+
+.search-bar-container {
+  width: 100%;
+  max-width: 600px;
+  display: flex;
+  justify-content: center;
+  padding: 20px 0;
+}
+
+.search-bar-container input {
+  width: 80%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.search-bar-container button {
+  padding: 10px;
+  border: none;
+  background-color: #4CAF50;
+  color: white;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.filter-link {
+  width: 100%;
+  max-width: 600px;
+  text-align: right;
+  padding: 10px;
+}
+
+.filter-link a {
+  color: #4CAF50;
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+/* Two navigable sections you should be able to scroll */
+.content-container {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 1200px;
+  padding: 20px 0;
+}
+
+/* Style for left and right sections */
+.left-section, .right-section {
+  width: 50;
+  max-height: 600px;
+  overflow-y: scroll;
+  display: flex;
+  flex-wrap: wrap; /* Allow posts to wrap to the nl*/
+  justify-content: space-between;
+}
+
+/* Post box styling */
+.post-box {
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 15px;
+  margin-bottom: 15px;
+  background-color: #f9f9f9;
+  width: 30%; /* Each post takes 30% of the container width to fit 3 in a row */
+  box-sizing: border-box;
+}
+
+.post-box h3 {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.post-box p {
+  font-size: 14px;
+  color: #666;
+}
+
+@media (max-width: 768px) {
+  .icon-container {
+      flex-wrap: wrap;
+      justify-content: center;
+  }
+  .search-bar-container input {
+      width: 100%;
+  }
+
+  /* Stack sections vertically on small screens */
+  .content-container {
+      flex-direction: column;
+      align-items: center;
+  }
+
+  .left-section, .right-section {
+      width: 100%;
+      max-height: unset; /* Allow sections to be full-height on small screens */
+  }
+
+  /* Posts take full width on smaller screens */
+  .post-box {
+      width: 100%;
+  }
+}
