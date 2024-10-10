@@ -37,12 +37,7 @@ body {
     background-color: #46ff18;
     color: #000000;
 }
-.vertical-line {
-    width: 2px;              /* Line width */
-    height: 50px;            /* Line height (adjust as needed) */
-    background-color: #ccc;  /* Line color */
-    margin: 0 10px;          /* Optional: spacing around the line */
-}
+
 
 .icon-container {
     display: flex;
