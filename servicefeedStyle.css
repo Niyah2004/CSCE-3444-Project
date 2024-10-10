@@ -1,142 +1,215 @@
-* {
-  margin: 0;
-  padding: 0;
-  font-family: 'Poppins', sans-serif;
-  box-sizing: border-box;
-}
-
+/* General body styling for dark theme */
 body {
-  background: #ffffff;
+    background-color: #121212;
+    color: #e0e0e0;
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
 }
 
-nav {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  background: #ffffff;
-  padding: 10px;
+/* Navigation styling */
+.main-bar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #1f1f1f;
+    padding: 10px;
+}
+
+.logo-container {
+    margin-right: auto;
+    justify-content: space-evenly;
+}
+
+.center-tabs {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+}
+
+.Buy-Tab, .Sell-Tab {
+    text-align: center;
+    color: #e0e0e0;
+    font-weight: bold;
+}
+.Buy_Tab, .Sell-Tab:hover {
+    background-color: #46ff18;
+    color: #000000;
+}
+.vertical-line {
+    width: 2px;              /* Line width */
+    height: 50px;            /* Line height (adjust as needed) */
+    background-color: #ccc;  /* Line color */
+    margin: 0 10px;          /* Optional: spacing around the line */
 }
 
 .icon-container {
-  display: flex;
-  justify-content: space-around;
-  width: 100%;
-  padding: 10px 0;
+    display: flex;
+    gap: 20px;
+    margin-left: auto;
 }
 
-.icon-item {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin: 0 15px; /* Adjust spacing between icons */
+
+
+.icon-Item p {
+    font-size: 8px;
+    margin-top: 5px;
 }
 
-.icon-item label {
-  font-size: 8px;
-  margin-top: 5px;
+
+/* Search and tabs styling */
+.nav-search-container {
+    display: flex;
+    align-items: center;
+    margin-top: 15px;
+    gap: 20px;
+    justify-content: space-between; /* Added to space items evenly */
 }
 
+/* Product and Service button container */
+.product-service-container {
+    display: flex;
+}
+
+.tab {
+    padding: 8px 16px;
+    background-color: #333;
+    color: #e0e0e0;
+    border: none;
+    border-radius: 0 8px 8px 0; 
+    cursor: pointer;
+    display: flex;
+    gap: 0px;
+}
+
+.tab:hover {
+    background-color: #46ff18;
+    color: #000000;
+}
+
+
+/* Search bar styling */
 .search-bar-container {
-  width: 100%;
-  max-width: 600px;
-  display: flex;
-  justify-content: center;
-  padding: 20px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .search-bar-container input {
-  width: 80%;
-  padding: 10px;
-  border: 1px solid #ccc;
-  border-radius: 5px;
+    padding: 8px;
+    background-color: #444;
+    border: 1px solid #444;
+    color: #000000;
+    border-radius: 4px 0 0 4px;
 }
 
-.search-bar-container button {
-  padding: 10px;
-  border: none;
-  background-color: #4CAF50;
-  color: white;
-  cursor: pointer;
-  border-radius: 5px;
+.search-bar-container .search-button {
+    padding: 8px;
+    background-color: #46ff18;
+    border: 1px solid #444;
+    border-radius: 0 4px 4px 0;
+    color: #000;
+    cursor: pointer;
 }
 
-.filter-link {
-  width: 100%;
-  max-width: 600px;
-  text-align: right;
-  padding: 10px;
+/* Dropdown styling */
+.category-dropdown {
+    margin-left: auto; /* Pushes the dropdown to the far right */
 }
 
-.filter-link a {
-  color: #4CAF50;
-  text-decoration: none;
-  font-size: 14px;
-  font-weight: bold;
+.category-dropdown select {
+    padding: 8px;
+    background-color: #2b2b2b;
+    color: #e0e0e0;
+    border: 1px solid #444;
+    border-radius: 4px;
 }
 
-/* Two navigable sections you should be able to scroll */
-.content-container {
-  display: flex;
-  justify-content: space-between;
-  width: 100%;
-  max-width: 1200px;
-  padding: 20px 0;
+/*=============== Stories ============== */
+.middle .Listings {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    
 }
 
-/* Style for left and right sections */
-.left-section, .right-section {
-  width: 50;
-  max-height: 600px;
-  overflow-y: scroll;
-  display: flex;
-  flex-wrap: wrap; /* Allow posts to wrap to the nl*/
-  justify-content: space-between;
+.middle .Listings .listItem {
+    display: flex;
+    flex-direction: column;  /* Ensures vertical layout */
+    align-items: center;
+    gap: 10px;               /* Space between elements */
+    background-color: #333;
+    border-radius: 10px;
+    padding: 10px;
+    width: 100%;
+    max-width: 180px;        /* Sets consistent width for each listItem */
+    color: #e0e0e0;
+    font-size: 0.9rem;
 }
 
-/* Post box styling */
-.post-box {
-  border: 1px solid #ccc;
-  border-radius: 5px;
-  padding: 15px;
-  margin-bottom: 15px;
-  background-color: #f9f9f9;
-  width: 30%; /* Each post takes 30% of the container width to fit 3 in a row */
-  box-sizing: border-box;
+.middle .Listings .Item-photo img {
+    width: 100%;             /* Full width of the container */
+    height: auto;
+    border-radius: 5px;
+    margin: auto;
 }
 
-.post-box h3 {
-  font-size: 18px;
-  margin-bottom: 10px;
+.listItem-info {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    width: 100%;
+    margin: auto;
 }
 
-.post-box p {
-  font-size: 14px;
-  color: #666;
+.listItem-info .name, .listItem-info .price {
+    margin: 0;
+}
+
+.buttons {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+}
+
+.like-btn, .message-btn {
+    background-color: #4dff50;
+    color: black;
+    border-radius: 5px;
+    font-weight: bold;
+    padding: 8px 12px;
+    cursor: pointer;
+}
+
+button:hover {
+    opacity: 0.8;
 }
 
 @media (max-width: 768px) {
-  .icon-container {
-      flex-wrap: wrap;
-      justify-content: center;
-  }
-  .search-bar-container input {
-      width: 100%;
-  }
-
-  /* Stack sections vertically on small screens */
-  .content-container {
-      flex-direction: column;
-      align-items: center;
-  }
-
-  .left-section, .right-section {
-      width: 100%;
-      max-height: unset; /* Allow sections to be full-height on small screens */
-  }
-
-  /* Posts take full width on smaller screens */
-  .post-box {
-      width: 100%;
-  }
+    .middle .Listings .listItem {
+        max-width: 45%; /* Two Listings.Listings per row on tablet screens */
+    }
 }
+
+@media (max-width: 480px) {
+    .middle .Listings .listItem {
+        max-width: 100%; /* Single listItem per row on small screens */
+    }
+}
+
+.middle .Listings .listItem .name {
+    z-index: 0;
+}
+
+
+
+.middle .listItem .Item-photo {
+    width: 10rem;
+    height: 10rem;
+    align-self: start;
+    border: 3px solid var(--color-light);
+}
+
+/* =============== Create Post ============== */
