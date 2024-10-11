@@ -37,7 +37,14 @@ body {
     background-color: #46ff18;
     color: #000000;
 }
+.center-tabs a, .Buy_Tab, .Sell_Tab {
+    color: white; /* Make hyperlink text white */
+    text-decoration: none; /* Remove underline if needed */
+}
 
+.center-tabs a:hover {
+    color: lightgray; /* Optional: change color on hover */
+}
 
 .icon-container {
     display: flex;
@@ -95,7 +102,7 @@ body {
     padding: 8px;
     background-color: #444;
     border: 1px solid #444;
-    color: #000000;
+    color: #ffffff;
     border-radius: 4px 0 0 4px;
 }
 
@@ -126,6 +133,7 @@ body {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    align-content: center;
     
 }
 
@@ -141,6 +149,12 @@ body {
     max-width: 180px;        /* Sets consistent width for each listItem */
     color: #e0e0e0;
     font-size: 0.9rem;
+    
+}
+.middle .Listings .listIten:hover {
+    transform: scale(1.05); /* Slightly increase size */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); /* Add shadow */
+    background-color: #2c2c2c; /* Darken background slightly */
 }
 
 .middle .Listings .Item-photo img {
@@ -154,6 +168,8 @@ body {
     text-align: center;
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
     gap: 5px;
     width: 100%;
     margin: auto;
