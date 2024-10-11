@@ -39,7 +39,14 @@ body {
     background-color: #46ff18;
     color: #000000;
 }
+.center-tabs a, .Buy_Tab, .Sell_Tab {
+    color: white; /* Make hyperlink text white */
+    text-decoration: none; /* Remove underline if needed */
+}
 
+.center-tabs a:hover {
+    color: lightgray; /* Optional: change color on hover */
+}
 
 .icon-container {
     display: flex;
@@ -191,3 +198,4 @@ input[type="file"] {
 .post-button:hover {
     background-color: #00cc00;
 }
+
