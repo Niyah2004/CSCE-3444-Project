@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Post Your Product or Service</title>
+    <link rel="stylesheet" href="liststyle.css">
+</head>
+<body>
+    <nav class="main-bar">
+        <!-- Icon Navigation Bar -->
+     <!-- Logo on the far left -->
+     <div class="logo-container">
+        <img src="images/logo.png" class="logo" alt="MarketMate Logo" width="120" height="50">
+    </div>
+
+    <!-- Centered Buy and Sell Tabs -->
+    <div class="center-tabs">
+        <div class="Buy-Tab">
+            <a href="./newservicefeed.html">
+                <label>Buy</label></a>
+        </div>
+        <div class="Sell-Tab">
+            <a href="./listing.html"> 
+            <label>List</label></a>
+        </div>
+    </div>
+    <!-- Icons on the far right -->
+    <div class="icon-container">
+        <div class="icon-item">
+            <img src="images/wishListIcon.png" alt="Wishlist Icon" width="15" height="15">
+            <!--<p>Messages</p>-->
+        </div>
+        <div class="icon-item">
+            <img src="images/messageIcon.png" alt="Message Icon" width="15" height="15">
+           <!-- <p>Notifications</p>-->
+        </div>
+        <div class="icon-item">
+            <img src="images/notifIcon.png" alt="Notification Icon" width="15" height="15">
+           <!-- <p>Notification</p>-->
+        </div>
+        <div class="icon-item">
+            <img src="images/profileIcon.png" alt="Profile Icon" width="35" height="20">
+          <!--  <p>Profile</p>-->
+            </div>
+        </div>
+</nav>
+        <!-- Navigation bar and Search section -->
+        <div class="nav-search-container">
+            <!-- Product and Service tabs in a container -->
+            <div class="product-service-container">
+                <a href= "newservicefeed.html">
+                <button class="tab active">Products</button></a>
+                <a href="services.html"> 
+                <button class="tab">Services</button></a>
+            </div>
+
+
+            <!-- Search bar container -->
+            <div class="search-bar-container">
+                <input type="text" placeholder="Search...">
+                <button class="search-button">Search</button>
+            </div>
+
+
+            <!-- Category dropdown positioned to the far right -->
+            <div class="category-dropdown">
+                <select>
+                    <option value="all">All Categories</option>
+                    <option value="electronics">Electronics</option>
+                    <option value="fashion">Fashion</option>
+                    <option value="home">Home</option>
+                    <!-- Additional categories as needed -->
+                </select>
+            </div>
+        </div>
+    </nav>
+</div>
+    <div class="container">
+        <h2>Upload Your Product or Service</h2>
+        <form>
+            <div class="upload-section">
+                <label for="imageUpload" class="upload-label">Upload Picture</label>
+                <input type="file" id="imageUpload" name="imageUpload" accept="image/*">
+            </div>
+            
+            <div class="text-fields">
+                <input type="text" placeholder="Title" name="title" required>
+                <input type="text" placeholder="Category" name="category" required>
+                <input type="text" placeholder="Price" name="price" required>
+                <input type="text" placeholder="Brand (Optional)" name="brand">
+                <input type="text" placeholder="Product or Service" name="productService">
+                <textarea placeholder="Description of Post" name="description" rows="4"></textarea>
+            </div>
+            
+            <button type="submit" class="post-button">Post</button>
+        </form>
+    </div>
+</body>
+</html>

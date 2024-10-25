@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv ="x- UA- Compatible" content=" IE-edge">
+    <title>Login Page</title>
+    <link rel="stylesheet" href="loginstyle-1.css">
+</head>
+<body>
+    <nav>
+        <body class="diagonal-line"></body>
+        <div class ="navLeft">
+    <img src="images/loginlogo.png" alt="MarketMate Logo. Green Background, with carrying items. " width="400" height="200">
+    <div class="login-container">
+        <h2>Login</h2>
+        <form action="/login" method="post">
+            <div class="input-group">
+                <label for="EmailAddress">Email Address</label>
+                <input type="text" id="EmailAddress" name="EmailAddress" required>
+            </div>
+            <div class="input-group">
+                <label for="password">Password</label>
+                <input type="password" id="password" name="password" required>
+            </div>
+            <button type="submit">Log in</button>
+            <p class="signup-link">Don't have an account? <a href="#">Sign up</a></p>
+        </form>
+    </div>
+</body>
+</html>
