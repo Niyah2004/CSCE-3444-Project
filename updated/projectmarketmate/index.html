@@ -9,6 +9,29 @@
     <link rel="stylesheet" href="https://unicons.iconscout.com/release/v2.1.6/css/unicons.css">
     <!-- Stylesheet -->
     <link rel="stylesheet" href="./style.css">
+
+<!-- Firebase SDKs -->
+<script src="https://www.gstatic.com/firebasejs/9.6.10/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/9.6.10/firebase-auth.js"></script>
+<script src="https://www.gstatic.com/firebasejs/9.6.10/firebase-firestore.js"></script>
+
+<script>
+    // Your Firebase configuration (from the Firebase Console)
+    const firebaseConfig = {
+        apiKey: "AIzaSyB9QRXtOcaG5t_3J4bY7atlA5B-jbDGDdY",
+        authDomain: "marketmate3444.firebaseapp.com",
+        projectId: "marketmate3444",
+        storageBucket: "marketmate3444.appspot.com",
+        messagingSenderId: "172272688922",
+        appId: "1:172272688922:web:2ddaeb01bb6244a59616a3"
+    };
+
+    // Initialize Firebase
+    const app = firebase.initializeApp(firebaseConfig);
+    const auth = firebase.auth();
+    const db = firebase.firestore();
+</script>
+
 </head>
 <body>
     <nav>
